@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- toko.buku tree view -->
+    <record id="youre_parfum_view_tree" model="ir.ui.view">
+        <field name="name">Custom Parfum</field>
+        <field name="model">youre_parfum</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="aroma parfum"/>
+                <field name="ukuran"/>
+                <field name="ketahanan parfum"/>
+                <field name="tipe parfum"/>
+                <field name="jumlah"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- toko.buku action window -->
+    <record id="toko_buku_jenis_buku_action" model="ir.actions.act_window">
+        <field name="name">Daftar Custom Parfum</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">youre_parfum_custom_parfum</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem 
+        id="youre_parfum_kat_parfum_menu_act" 
+        name="Custom Parfum" 
+        parent="youre_kat_p_menu_categ" 
+        action="youre_p_parfum_action" 
+        sequence="20"/>
+
+</odoo>

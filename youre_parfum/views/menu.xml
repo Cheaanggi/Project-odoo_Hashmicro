@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+    <menuitem 
+        id="youre_parfum_menu_root" 
+        name="Youre Parfum" 
+        sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="youre_parfum__orderparfum_menu_categ" 
+        name="Order Parfum" 
+        parent="youre_parfum_menu_root" 
+        sequence="10"/>
+    
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="youre_parfum__customorder_menu_categ" 
+        name="Custom Order" 
+        parent="wedding_menu_root" 
+        sequence="20"/>
+
+</odoo>
